@@ -1,0 +1,546 @@
+> 
+> # Create plot5
+> 
+> 
+> # View plot5
+> 
+> # Create plot1
+> plot1 <- ggplot(Housing) + 
++   geom_boxplot(aes(x = as.factor(stories), y = price)) 
+> # View plot1
+> plot1
+> 
+> # Create plot2
+> plot2 <- ggplot(Housing) + 
++   geom_boxplot(aes(x = as.factor(stories), y = price, fill=fullbase)) 
+> 
+> # View plot2
+> plot2
+> 
+> # Create plot3
+> plot3 <- ggplot(Housing) + 
++   geom_boxplot(aes(x = as.factor(stories), y = price, fill=fullbase)) +
++   facet_wrap(~fullbase, ncol=1)
+> 
+> # View plot3
+> plot3
+> 
+> 
+> # Create plot4
+> 
+> 
+> # View plot4
+> 
+> 
+> # Create plot5
+> 
+> 
+> # View plot5
+> 
+> # Create plot1
+> plot1 <- ggplot(Housing) + 
++   geom_boxplot(aes(x = as.factor(stories), y = price)) 
+> 
+> # View plot1
+> plot1
+> 
+> # Create plot2
+> plot2 <- ggplot(Housing) + 
++   geom_boxplot(aes(x = as.factor(stories), y = price, fill=fullbase, group=aircon)) 
+> 
+> # View plot2
+> plot2
+Error in FUN(X[[i]], ...) : object 'aircon' not found
+> 
+> # Create plot3
+> plot3 <- ggplot(Housing) + 
++   geom_boxplot(aes(x = as.factor(stories), y = price, fill=fullbase)) +
++   facet_wrap(~aircon, ncol=1)
+> 
+> # View plot3
+> plot3
+Error: At least one layer must contain all faceting variables: `aircon`.
+* Plot is missing `aircon`
+* Layer 1 is missing `aircon`
+> 
+> 
+> # Create plot4
+> 
+> 
+> # View plot4
+> 
+> 
+> # Create plot5
+> 
+> 
+> # View plot5
+> 
+> # Create plot1
+> plot1 <- ggplot(Housing) + 
++   geom_boxplot(aes(x = as.factor(stories), y = price)) 
+> 
+> # View plot1
+> plot1
+> 
+> # Create plot2
+> plot2 <- ggplot(Housing) + 
++   geom_boxplot(aes(x = as.factor(stories), y = price, fill=fullbase)) 
+> 
+> # View plot2
+> plot2
+> 
+> # Create plot3
+> plot3 <- ggplot(Housing) + 
++   geom_boxplot(aes(x = as.factor(stories), y = price, fill=fullbase, group=aircon)) +
++   facet_wrap(~aircon, ncol=1)
+> 
+> # View plot3
+> plot3
+Error: At least one layer must contain all faceting variables: `aircon`.
+* Plot is missing `aircon`
+* Layer 1 is missing `aircon`
+> 
+> 
+> # Create plot4
+> 
+> 
+> # View plot4
+> 
+> 
+> # Create plot5
+> 
+> 
+> # View plot5
+> 
+> # Create plot1
+> plot1 <- ggplot(Housing) + 
++   geom_boxplot(aes(x = as.factor(stories), y = price)) 
+> 
+> # View plot1
+> plot1
+> 
+> # Create plot2
+> plot2 <- ggplot(Housing) + 
++   geom_boxplot(aes(x = as.factor(stories), y = price, fill=fullbase)) 
+> 
+> # View plot2
+> plot2
+> 
+> # Create plot3
+> plot3 <- ggplot(Housing) + 
++   geom_boxplot(aes(x = as.factor(stories), y = price, fill=aircon)) +
++   facet_wrap(~aircon, ncol=1)
+> 
+> # View plot3
+> plot3
+Error: At least one layer must contain all faceting variables: `aircon`.
+* Plot is missing `aircon`
+* Layer 1 is missing `aircon`
+> 
+> 
+> # Create plot4
+> 
+> 
+> # View plot4
+> 
+> 
+> # Create plot5
+> 
+> 
+> # View plot5
+> 
+> View(Housing)
+> # Create plot1
+> plot1 <- ggplot(Housing) + 
++   geom_boxplot(aes(x = as.factor(stories), y = price)) 
+> 
+> # View plot1
+> plot1
+> 
+> # Create plot2
+> plot2 <- ggplot(Housing) + 
++   geom_boxplot(aes(x = as.factor(stories), y = price, fill=fullbase)) 
+> 
+> # View plot2
+> plot2
+> 
+> # Create plot3
+> plot3 <- ggplot(Housing) + 
++   geom_boxplot(aes(x = as.factor(stories), y = price, fill=fullbase)) +
++   facet_wrap(~airco, ncol=1)
+> 
+> # View plot3
+> plot3
+> 
+> 
+> # Create plot4
+> 
+> 
+> # View plot4
+> 
+> 
+> # Create plot5
+> 
+> 
+> # View plot5
+> 
+> # Create plot1
+> plot1 <- ggplot(Housing) + 
++   geom_boxplot(aes(x = as.factor(stories), y = price)) 
+> 
+> # View plot1
+> plot1
+> 
+> # Create plot2
+> plot2 <- ggplot(Housing) + 
++   geom_boxplot(aes(x = as.factor(stories), y = price, fill=fullbase)) 
+> 
+> # View plot2
+> plot2
+> 
+> # Create plot3
+> plot3 <- ggplot(Housing) + 
++   geom_boxplot(aes(x = as.factor(stories), y = price, fill=fullbase)) +
++   facet_wrap(~airco, ncol=1)
+> 
+> # View plot3
+> plot3
+> 
+> 
+> # Create plot4
+> plot4 <- ggplot(Housing) + 
++   geom_boxplot(aes(x = as.factor(stories), y = price, fill=fullbase)) +
++   facet_wrap(~airco, ncol=1) +
++   theme_bw()
+> 
+> # View plot4
+> plot4
+> 
+> # Create plot5
+> plot5 <- ggplot(Housing) + 
++   geom_boxplot(aes(x = as.factor(stories), y = price, fill=fullbase)) +
++   facet_wrap(~airco, ncol=1) +
++   theme_bw() +
++   xlab("Number of Stories") +
++   ylab("Price")
+> 
+> # View plot5
+> plot5
+[2020-03-13 20:15:12] [error] handle_read_frame error: websocketpp.transport:7 (End of File)
+> # Create subset1
+> subset1 = select(Housing, price, recroom, airco)
+> 
+> # Create subset2
+> 
+> 
+> # Create subset3
+> 
+> 
+> # Create table1
+> 
+> 
+> # Create table2
+> 
+> View(Housing)
+> # Create subset1
+> subset1 = select(Housing, price, recroom, airco)
+> 
+> # Create subset2
+> subset2 = filter(Housing, bedroom >= 4)
+Error: object 'bedroom' not found
+> 
+> 
+> # Create subset3
+> 
+> 
+> # Create table1
+> 
+> 
+> # Create table2
+> 
+> # Create subset1
+> subset1 = select(Housing, price, recroom, airco)
+> 
+> # Create subset2
+> subset2 = filter(Housing, bedrooms >= 4)
+> 
+> 
+> # Create subset3
+> 
+> 
+> # Create table1
+> 
+> 
+> # Create table2
+> 
+> View(Housing)
+> # Create subset1
+> subset1 = select(Housing, price, recroom, airco)
+> 
+> # Create subset2
+> subset2 = filter(Housing, bedrooms >= 4)
+> 
+> # Create subset3
+> subset3 = Housing %>% 
++   select(driveway,stories,price) %>% 
++   filter(driveway == "yes")
+> 
+> # Create table1
+> 
+> 
+> # Create table2
+> 
+> # Create subset1
+> subset1 = select(Housing, price, recroom, airco)
+> 
+> # Create subset2
+> subset2 = filter(Housing, bedrooms >= 4)
+> 
+> # Create subset3
+> subset3 = Housing %>% 
++   select(driveway,stories,price) %>% 
++   filter(driveway == "yes")
+> 
+> # Create table1
+> table1 = Housing %>% group_by(recroom) %>% summarize(lotsize)
+Error: Column `lotsize` must be length 1 (a summary value), not 449
+> table1
+Error: object 'table1' not found
+> 
+> # Create table2
+> 
+> # Create subset1
+> subset1 = select(Housing, price, recroom, airco)
+> 
+> # Create subset2
+> subset2 = filter(Housing, bedrooms >= 4)
+> 
+> # Create subset3
+> subset3 = Housing %>% 
++   select(driveway,stories,price) %>% 
++   filter(driveway == "yes")
+> 
+> # Create table1
+> table1 = Housing %>% group_by(recroom) %>% summarize(lot_size)
+Error: object 'lot_size' not found
+> table1
+Error: object 'table1' not found
+> 
+> # Create table2
+> 
+> # Create subset1
+> subset1 = select(Housing, price, recroom, airco)
+> 
+> # Create subset2
+> subset2 = filter(Housing, bedrooms >= 4)
+> 
+> # Create subset3
+> subset3 = Housing %>% 
++   select(driveway,stories,price) %>% 
++   filter(driveway == "yes")
+> 
+> # Create table1
+> table1 = Housing %>% group_by(recroom) %>% summarize(lotsize)
+Error: Column `lotsize` must be length 1 (a summary value), not 449
+> table1
+Error: object 'table1' not found
+> 
+> # Create table2
+> 
+[2020-03-13 20:33:14] [error] handle_read_frame error: websocketpp.transport:7 (End of File)
+> View(Housing)
+> # Create subset1
+> subset1 = select(Housing, price, recroom, airco)
+> 
+> # Create subset2
+> subset2 = filter(Housing, bedrooms >= 4)
+> 
+> # Create subset3
+> subset3 = Housing %>% 
++   select(driveway,stories,price) %>% 
++   filter(driveway == "yes")
+> 
+> # Create table1
+> table1 = Housing %>% group_by(recroom) %>% summarize(mean(lotsize))
+> table1
+# A tibble: 2 x 2
+  recroom `mean(lotsize)`
+  <fct>             <dbl>
+1 no                5009.
+2 yes               5804.
+> 
+> # Create table2
+> 
+> # Create subset1
+> subset1 = select(Housing, price, recroom, airco)
+> 
+> # Create subset2
+> subset2 = filter(Housing, bedrooms >= 4)
+> 
+> # Create subset3
+> subset3 = Housing %>% 
++   select(driveway,stories,price) %>% 
++   filter(driveway == "yes")
+> 
+> # Create table1
+> table1 = Housing %>% group_by(recroom) %>% 
++   summarize(mean_lotsize = mean(lotsize))
+> 
+> # Create table2
+> 
+> # Create subset1
+> subset1 = select(Housing, price, recroom, airco)
+> 
+> # Create subset2
+> subset2 = filter(Housing, bedrooms >= 4)
+> 
+> # Create subset3
+> subset3 = Housing %>% 
++   select(driveway,stories,price) %>% 
++   filter(driveway == "yes")
+> 
+> # Create table1
+> table1 = Housing %>% group_by(recroom) %>% 
++   summarize(mean_lotsize = mean(lotsize))
+> table1
+# A tibble: 2 x 2
+  recroom mean_lotsize
+  <fct>          <dbl>
+1 no             5009.
+2 yes            5804.
+> 
+> # Create table2
+> 
+> # Create subset1
+> subset1 = select(Housing, price, recroom, airco)
+> 
+> # Create subset2
+> subset2 = filter(Housing, bedrooms >= 4)
+> 
+> # Create subset3
+> subset3 = Housing %>% 
++   select(driveway,stories,price) %>% 
++   filter(driveway == "yes")
+> 
+> # Create table1
+> table1 = Housing %>% group_by(recroom) %>% 
++   summarize(mean_lotsize = mean(lotsize))
+> 
+> # Create table2
+> table2 = Housing %>% group_by(stories) %>% 
++   summarize(max_price = max(price), min_price = min(price))
+> table2
+# A tibble: 4 x 3
+  stories max_price min_price
+    <dbl>     <dbl>     <dbl>
+1       1    155000     25000
+2       2    175000     25000
+3       3    190000     40750
+4       4    175000     65000
+> 
+> # Create table3
+> table3 <- Housing %>% 
++   select(price > 50000) %>%
++   group_by(stories, fullbase, airco) %>% 
++   summarize(mean_price = mean(price), mean_lotsize = mean(lotsize), mean_price_per_ft = mean(price)/mean(lotsize))
+Error in .f(.x[[i]], ...) : object 'price' not found
+> table3
+Error: object 'table3' not found
+> 
+> # Create plot6
+> 
+> # View plot6
+> 
+> # Create table3
+> table3 <- Housing %>% 
++   select(price > 50000) 
+Error in .f(.x[[i]], ...) : object 'price' not found
+> table3
+Error: object 'table3' not found
+> 
+> # Create plot6
+> 
+> # View plot6
+> 
+> # Create table3
+> table3 <- Housing %>% 
++   select(Housing, price > 50000) 
+Error in .f(.x[[i]], ...) : object 'price' not found
+> table3
+Error: object 'table3' not found
+> 
+> # Create plot6
+> 
+> # View plot6
+> 
+> # Create table3
+> table3 <- Housing %>% 
++   filter(price > 50000) %>%
++   group_by(stories, fullbase, airco) %>% 
++   summarize(mean_price = mean(price), mean_lotsize = mean(lotsize), mean_price_per_ft = mean(price)/mean(lotsize))
+> table3
+# A tibble: 16 x 6
+# Groups:   stories, fullbase [8]
+   stories fullbase airco mean_price mean_lotsize mean_price_per_ft
+     <dbl> <fct>    <fct>      <dbl>        <dbl>             <dbl>
+ 1       1 no       no        61502.        5873.              10.5
+ 2       1 no       yes       70519.        6792.              10.4
+ 3       1 yes      no        72317.        5748.              12.6
+ 4       1 yes      yes       84178.        6388.              13.2
+ 5       2 no       no        70700         5030.              14.1
+ 6       2 no       yes       81042.        5361.              15.1
+ 7       2 yes      no        75281.        4924.              15.3
+ 8       2 yes      yes       94048.        5605.              16.8
+ 9       3 no       no        74546.        4855.              15.4
+10       3 no       yes       92621.        5934.              15.6
+11       3 yes      no        87500         5972.              14.7
+12       3 yes      yes       58000         3000               19.3
+13       4 no       no        88429.        6456.              13.7
+14       4 no       yes      107038.        6479.              16.5
+15       4 yes      no        95500         6600               14.5
+16       4 yes      yes       94700         7050               13.4
+> 
+> # Create plot6
+> 
+> # View plot6
+> 
+> # Create table3
+> table3 <- Housing %>% 
++   filter(price > 50000) %>%
++   group_by(stories, fullbase, airco) %>% 
++   summarize(mean_price = mean(price), mean_lotsize = mean(lotsize), mean_price_per_ft = mean(price)/mean(lotsize))
+> 
+> # Create plot6
+> plot6 <- ggplot(table3) +
++   geom_point(aes(x=mean_price_per_ft,y=mean_price_per_ft,col=fullbase)) +
++   geom_line(aes(x=mean_price_per_ft,y=mean_price_per_ft,col=fullbase)) +
++   facet_wrap(~airco, ncol=1) +
++   theme_bc() +
++   xlab("Number of Stories") +
++   ylab("Average Price per Square Foot")
+Error in theme_bc() : could not find function "theme_bc"
+> 
+> # View plot6
+> plot6
+Error: object 'plot6' not found
+> 
+> # Create table3
+> table3 <- Housing %>% 
++   filter(price > 50000) %>%
++   group_by(stories, fullbase, airco) %>% 
++   summarize(mean_price = mean(price), mean_lotsize = mean(lotsize), mean_price_per_ft = mean(price)/mean(lotsize))
+> 
+> # Create plot6
+> plot6 <- ggplot(table3) +
++   geom_point(aes(x=mean_price_per_ft,y=mean_price_per_ft,col=fullbase)) +
++   geom_line(aes(x=mean_price_per_ft,y=mean_price_per_ft,col=fullbase)) +
++   facet_wrap(~airco, ncol=1) +
++   theme_bw() +
++   xlab("Number of Stories") +
++   ylab("Average Price per Square Foot")
+> 
+> # View plot6
+> plot6
+> 
+
+> View(table3)
